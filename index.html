@@ -8,7 +8,7 @@
     <style>
     
         header{
-            background-color: #f172b1;
+            background-color: #ff85c2;
             color: #57073f;
             text-align: center;
             max-width: 800px;
@@ -16,7 +16,7 @@
             padding: 16px;
         }
         main{
-            background-color: #ff9bcd;
+            background-color: #ffc2e1;
             color: #57073f;
             max-width: 800px;
             margin: 0 auto;
@@ -30,7 +30,7 @@
 
         .foto {
             width: 200px;
-            height: 110px;
+            height: 150px;
 
         }
 
@@ -45,7 +45,6 @@
     <main> 
         <img src="09a05872d29ac2eb454e908f715f7969.jpg" alt="">
         <h2>Meninas Malvadas: O Clássico Pop que Continua Ditando Regras e Definindo Gerações.</h2>
-        <p>Por: Priscila Zocche</p>
         <p>Lançado em 2004, Meninas Malvadas (Mean Girls) transcendeu a barreira do tempo para se consolidar como um dos maiores fenômenos culturais da comédia adolescente. Escrito por Tina Fey e dirigido por Mark Waters, o filme pegou a clássica fórmula de dramas escolares e a transformou em uma sátira afiada, inteligente e absurdamente hilária sobre a hierarquia social do ensino médio.</p>
         
         <button> ❤️<span>0</span></button>
@@ -57,34 +56,35 @@
             <div>
                 <h2>A História: Entrando na Selva de Pedra (e do Colégio).</h2>
                 <img class="foto" src="e866086dbeb6e3d731b21457e47e2bb3.jpg" alt="">
-                    <p class="artigo-autot">Por Priscila Zocche</p>
-                    <p>A trama acompanha Cady Heron (Lindsay Lohan), uma adolescente que passou a vida inteira sendo educada em casa pelos pais zoólogos na África. Ela rapidamente chama a atenção das "Plásticas", o grupo mais popular, rico e temido do colégio, liderado pela implacável e carismática Regina George (Rachel McAdams). Ao se infiltrar no grupo para destruí-lo a pedido de seus novos amigos Janis (Lizzy Caplan) e Damian (Daniel Franzese), Cady acaba se corrompendo pelo próprio poder de ser popular. Meninas Malvadas é divertido, inteligente e obrigatório. Mais do que uma comédia pastelão sobre o colegial, é um manual atemporal sobre amizade, identidade e a importância de ser fiel a si mesmo (mesmo que você acabe "quebrando a coroa da rainha em vários pedacinhos").</p>
-                    <button>❤️<span>0</span></button>
-                    <button>👍🏽<span>0</span></button>
-
-                </div>
-              </article>
-      </main>
-
+                <p class="artigo-autot"></p>
+                <p>A trama acompanha Cady Heron (Lindsay Lohan), uma adolescente que passou a vida inteira sendo educada em casa pelos pais zoólogos na África. Ela rapidamente chama a atenção das "Plásticas", o grupo mais popular, rico e temido do colégio, liderado pela implacável e carismática Regina George (Rachel McAdams). Ao se infiltrar no grupo para destruí-lo a pedido de seus novos amigos Janis (Lizzy Caplan) e Damian (Daniel Franzese), Cady acaba se corrompendo pelo próprio poder de ser popular. Meninas Malvadas é divertido, inteligente e obrigatório. Mais do que uma comédia pastelão sobre o colegial, é um manual atemporal sobre amizade, identidade e a importância de ser fiel a si mesmo (mesmo que você acabe "quebrando a coroa da rainha em vários pedacinhos").</p>
+                <p>Por: Priscila Zocche</p>
+                <button>❤️<span>0</span></button>
+                <button>👍🏽<span>0</span></button>
+                
+            </div>
+        </article>
+    </main>
+    
 </body>
-     <script>
-        const botoes = document.querySelectorAll("button");
-        botoes.forEach(function(botao){
-            let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado() {
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                if(curtiu === false){
-                    texto.textContent++;
-                    curtiu = true;
-                } else{
-                    texto.textContent--;
-                    curtiu = false;
-                }
+<script>
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function(botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
             }
         })
-     </script>
+        </script>
 
 
 </html>
@@ -92,6 +92,6 @@
 </main>
 
 
-  
+
 </body>
 </html>
